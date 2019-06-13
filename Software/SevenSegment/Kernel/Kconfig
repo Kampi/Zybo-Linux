@@ -1,0 +1,7 @@
+menu "Digilent SSD PMOD"
+
+config SEVEN_SEGMENT
+        tristate "Digilent SSD PMOD driver"
+        help
+          Select this option to enable the digilent SSD PMOD driver!
+endmenu

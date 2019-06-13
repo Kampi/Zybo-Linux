@@ -1,0 +1,332 @@
+
+*** Running vivado
+    with args -log ProcessingSystem_AXI_Segment_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ProcessingSystem_AXI_Segment_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ProcessingSystem_AXI_Segment_0_0.tcl -notrace
+Command: synth_design -top ProcessingSystem_AXI_Segment_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31282 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1342.625 ; gain = 83.902 ; free physical = 2794 ; free virtual = 7310
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ProcessingSystem_AXI_Segment_0_0' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ip/ProcessingSystem_AXI_Segment_0_0/synth/ProcessingSystem_AXI_Segment_0_0.vhd:84]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'AXI_Segment_v1_0' declared at '/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0.vhd:5' bound to instance 'U0' of component 'AXI_Segment_v1_0' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ip/ProcessingSystem_AXI_Segment_0_0/synth/ProcessingSystem_AXI_Segment_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'AXI_Segment_v1_0' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0.vhd:50]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'AXI_Segment_v1_0_S_AXI' declared at '/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:5' bound to instance 'AXI_Segment_v1_0_S_AXI_inst' of component 'AXI_Segment_v1_0_S_AXI' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'AXI_Segment_v1_0_S_AXI' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:234]
+INFO: [Synth 8-226] default block is never used [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:364]
+INFO: [Synth 8-3491] module 'SevenSegment' declared at '/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/SevenSegment.vhd:33' bound to instance 'Display' of component 'SevenSegment' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment' [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/SevenSegment.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (1#1) [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/SevenSegment.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'AXI_Segment_v1_0_S_AXI' (2#1) [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0_S_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'AXI_Segment_v1_0' (3#1) [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ipshared/612a/hdl/AXI_Segment_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'ProcessingSystem_AXI_Segment_0_0' (4#1) [/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.srcs/sources_1/bd/ProcessingSystem/ip/ProcessingSystem_AXI_Segment_0_0/synth/ProcessingSystem_AXI_Segment_0_0.vhd:84]
+WARNING: [Synth 8-3331] design AXI_Segment_v1_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AXI_Segment_v1_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AXI_Segment_v1_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AXI_Segment_v1_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AXI_Segment_v1_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AXI_Segment_v1_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1386.250 ; gain = 127.527 ; free physical = 2738 ; free virtual = 7270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1386.250 ; gain = 127.527 ; free physical = 2732 ; free virtual = 7264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1386.250 ; gain = 127.527 ; free physical = 2732 ; free virtual = 7264
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.53 . Memory (MB): peak = 1688.859 ; gain = 2.000 ; free physical = 2178 ; free virtual = 6754
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2366 ; free virtual = 6944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2366 ; free virtual = 6944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2368 ; free virtual = 6946
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:01:49 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2349 ; free virtual = 6927
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SevenSegment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module AXI_Segment_v1_0_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design ProcessingSystem_AXI_Segment_0_0 has unconnected port s_axi_awprot[2]
+WARNING: [Synth 8-3331] design ProcessingSystem_AXI_Segment_0_0 has unconnected port s_axi_awprot[1]
+WARNING: [Synth 8-3331] design ProcessingSystem_AXI_Segment_0_0 has unconnected port s_axi_awprot[0]
+WARNING: [Synth 8-3331] design ProcessingSystem_AXI_Segment_0_0 has unconnected port s_axi_arprot[2]
+WARNING: [Synth 8-3331] design ProcessingSystem_AXI_Segment_0_0 has unconnected port s_axi_arprot[1]
+WARNING: [Synth 8-3331] design ProcessingSystem_AXI_Segment_0_0 has unconnected port s_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/AXI_Segment_v1_0_S_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_Segment_v1_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/AXI_Segment_v1_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_Segment_v1_0_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_Segment_v1_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/AXI_Segment_v1_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_Segment_v1_0_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/aw_en_reg) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXI_Segment_v1_0_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module ProcessingSystem_AXI_Segment_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:52 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2285 ; free virtual = 6867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:02:34 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2058 ; free virtual = 6650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:02:35 . Memory (MB): peak = 1688.859 ; gain = 430.137 ; free physical = 2060 ; free virtual = 6652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:02:35 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2058 ; free virtual = 6650
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2060 ; free virtual = 6652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2062 ; free virtual = 6654
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2062 ; free virtual = 6654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2062 ; free virtual = 6654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2061 ; free virtual = 6653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2061 ; free virtual = 6653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     3|
+|3     |LUT3 |     8|
+|4     |LUT4 |    22|
+|5     |LUT5 |     4|
+|6     |LUT6 |    43|
+|7     |FDRE |   178|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------+------+
+|      |Instance                        |Module                 |Cells |
++------+--------------------------------+-----------------------+------+
+|1     |top                             |                       |   262|
+|2     |  U0                            |AXI_Segment_v1_0       |   262|
+|3     |    AXI_Segment_v1_0_S_AXI_inst |AXI_Segment_v1_0_S_AXI |   262|
+|4     |      Display                   |SevenSegment           |    34|
++------+--------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.875 ; gain = 432.152 ; free physical = 2058 ; free virtual = 6649
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 1690.875 ; gain = 129.543 ; free physical = 2108 ; free virtual = 6699
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:02:39 . Memory (MB): peak = 1690.883 ; gain = 432.152 ; free physical = 2114 ; free virtual = 6705
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:02:43 . Memory (MB): peak = 1697.875 ; gain = 450.703 ; free physical = 1887 ; free virtual = 6480
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.runs/ProcessingSystem_AXI_Segment_0_0_synth_1/ProcessingSystem_AXI_Segment_0_0.dcp' has been generated.

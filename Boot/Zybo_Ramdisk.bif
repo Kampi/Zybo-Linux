@@ -1,0 +1,8 @@
+image : {
+        [bootloader]/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.sdk/FSBL/Debug/FSBL.elf
+	/home/daniel/Schreibtisch/Git/Zybo-Linux/Vivado/ZyboLinux/ZyboLinux.sdk/ProcessingSystem_wrapper_hw_platform_0/ProcessingSystem_wrapper.bit
+	/home/daniel/Schreibtisch/Git/Zybo-Linux/build/u-boot.elf
+	      [load=0x2a00000]devicetree.dtb
+	      [load=0x2000000]arm_ramdisk.image.gz
+	      [load=0x3000000]uImage.bin
+}

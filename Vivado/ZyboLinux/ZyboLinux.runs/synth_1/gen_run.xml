@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1548508255">
+  <File Type="PA-TCL" Name="ProcessingSystem_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="ProcessingSystem_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ProcessingSystem_wrapper.vds"/>
+  <File Type="RDS-DCP" Name="ProcessingSystem_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ProcessingSystem_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="ProcessingSystem_wrapper_utilization_synth.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ProcessingSystem/ProcessingSystem.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ProcessingSystem/hdl/ProcessingSystem_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ProcessingSystem_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ZyboLinux.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/new/ZyboLinux.xdc"/>
+        <Attr Name="ImportTime" Val="1548252217"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ZyboLinux.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_AXI_Segment_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_xadc_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ProcessingSystem_axi_gpio_1_0"/>
+</GenRun>

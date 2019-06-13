@@ -1,0 +1,12 @@
+&gem0 
+{
+ 	phy-handle = <&ethernet_phy>;
+ 	/* phy-reset-gpio = <&axi_gpio_eth 0 0>;
+ 	phy-reset-active-low;
+ 	phy-reset-duration = <10>; */
+ 	ethernet_phy: ethernet-phy@1 
+	{
+ 		reg = <1>;
+ 		device_type = "ethernet-phy";
+ 	};
+ };

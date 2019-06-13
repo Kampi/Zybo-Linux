@@ -1,0 +1,12 @@
+&gem0 {
+	phy-handle = <&phy0>;
+	phy-mode = "rgmii-id";
+	gem0_mdio: mdio {
+		phy0: phy@1 {
+			compatible = "realtek,RTL8211E";
+			device_type = "ethernet-phy";
+			reg = <1>;
+		};
+	};
+};
+

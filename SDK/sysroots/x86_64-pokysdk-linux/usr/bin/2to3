@@ -1,0 +1,5 @@
+#!/home/daniel/Schreibtisch/Git/Zybo-Linux/SDK/sysroots/x86_64-pokysdk-linux/usr/bin/python2.7
+import sys
+from lib2to3.main import main
+
+sys.exit(main("lib2to3.fixes"))
