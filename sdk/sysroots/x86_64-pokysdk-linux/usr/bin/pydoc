@@ -1,0 +1,5 @@
+#!/home/daniel/Schreibtisch/Git/Zybo-Linux/SDK/sysroots/x86_64-pokysdk-linux/usr/bin/python2.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

@@ -1,0 +1,9 @@
+arm-pokysdk-linux
+x86_64_nativesdk-.*-linux.*
+
+noarch-.*-linux.*
+
+any-.*-linux.*
+
+all-.*-linux.*
+

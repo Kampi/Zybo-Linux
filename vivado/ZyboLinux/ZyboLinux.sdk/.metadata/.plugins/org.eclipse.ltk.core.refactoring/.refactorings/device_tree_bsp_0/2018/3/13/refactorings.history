@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;device_tree_bsp_0/Bootargs.dts&apos; to &apos;Top.dts&apos;" description="Rename resource &apos;Bootargs.dts&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Bootargs.dts" name="Top.dts" stamp="1522222977567" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;device_tree_bsp_0/EthernetPhy.dtsi&apos; to &apos;ZyboEthernet.dtsi&apos;" description="Rename resource &apos;EthernetPhy.dtsi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="EthernetPhy.dtsi" name="ZyboEthernet.dtsi" stamp="1522343781418" updateReferences="true"/>
+</session>

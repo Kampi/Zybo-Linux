@@ -1,0 +1,12 @@
+&gem0 
+{
+ 	phy-handle = <&ethernet_phy>;
+    xlnx,eth-mode = <0x1>;
+    xlnx,has-mdio = <0x1>;
+ 	ethernet_phy: ethernet-phy@1 
+	{
+		compatible = "realtek,RTL8211E";
+ 		reg = <1>;
+ 		device_type = "ethernet-phy";
+ 	};
+};

@@ -1,0 +1,22 @@
+&gem0 
+{
+	local-mac-address = [00 0a 35 00 00 00];
+    phy-mode = "rgmii-id";
+	status = "okay";
+	phy-handle = <&ethernet_phy>;
+	xlnx,eth-mode = <0x1>;
+	xlnx,has-mdio = <0x1>;
+	xlnx,ptp-enet-clock = <0x6750918>;
+	gem0_mdio: mdio 
+	{
+		#address-cells = <1>;
+		#size-cells = <0>;
+        
+		ethernet_phy: ethernet-phy@1 
+		{
+			compatible = "realtek,RTL8211E";
+			device_type = "ethernet-phy";
+			reg = <1>;
+        	};
+    	};
+};
