@@ -1,0 +1,4 @@
+**/device-tree-xlnx
+**/u-boot-xlnx
+**/linux-xlnx
+qemu/qemu/
