@@ -1,3 +1,0 @@
-#!/bin/sh
-
-rpm -qa 2>&1 | sort > /var/log/rpmpkgs

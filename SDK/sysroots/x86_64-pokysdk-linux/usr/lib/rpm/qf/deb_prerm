@@ -1,6 +1,0 @@
-"\
-%|PREUN?{\
-%|PREUNPROG?{#!%{PREUNPROG}}:{#!/bin/sh}|\
-\n%{PREUN}\
-\n}|\
-"

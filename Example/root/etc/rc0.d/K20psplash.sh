@@ -1,1 +1,0 @@
-../init.d/psplash.sh

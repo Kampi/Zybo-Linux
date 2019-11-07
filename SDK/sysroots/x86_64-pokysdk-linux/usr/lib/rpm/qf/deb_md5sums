@@ -1,7 +1,0 @@
-"\
-%|FILENAMES?{\
-[\
-%{Debmd5sums}\n\
-]\
-}|\
-"

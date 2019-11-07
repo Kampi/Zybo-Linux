@@ -1,3 +1,0 @@
-"\
- set Keyspace1.Standard2\['%{NVRA}.rpm'\]\['SOURCERPM'\] = '%{SOURCERPM}'\
-\n"

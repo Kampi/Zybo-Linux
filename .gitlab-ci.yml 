@@ -1,9 +1,0 @@
-image: debian
-
-stages:
-    - Version
-    
-Version:
-    stage: Version
-    script:
-        - whoami

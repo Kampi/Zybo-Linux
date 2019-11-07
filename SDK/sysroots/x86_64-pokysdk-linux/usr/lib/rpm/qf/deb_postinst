@@ -1,6 +1,0 @@
-"\
-%|POSTIN?{\
-%|POSTINPROG?{#!%{POSTINPROG}}:{#!/bin/sh}|\
-\n%{POSTIN}\
-\n}|\
-"

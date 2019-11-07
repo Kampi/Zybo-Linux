@@ -1,6 +1,0 @@
-"\
-%|PREIN?{\
-%|PREINPROG?{#!%{PREINPROG}}:{#!/bin/sh}|\
-\n%{PREIN}\
-\n}|\
-"
