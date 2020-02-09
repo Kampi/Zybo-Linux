@@ -64,4 +64,4 @@ You can find additional IP cores in my [IP repository](https://gitlab.com/Kampi/
 
 ## Maintainer
 
-- [Daniel Kampert](DanielKampert@kampis-elektroecke.de)
+- [Daniel Kampert](mailto:DanielKampert@kampis-elektroecke.de)
