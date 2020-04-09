@@ -106,6 +106,7 @@ if [ $# -eq 1 ]
 				echo -e ${Yellow}"Fetch xilinx sources from git..."${Reset}
 				cd Kernel
 				git clone https://github.com/Xilinx/linux-xlnx.git
+				cd linux-xlnx
 				git fetch && git fetch --tags
 				git checkout ${VER_KERNEL}
 				cd ${DIR_RPOJECT}
