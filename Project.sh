@@ -82,7 +82,7 @@ if [ $# -eq 1 ]
 				#sudo apt-get -y install linux-source linux-kernel-headers kernel-package
 				sudo apt-get -y install u-boot-tools device-tree-compiler build-essential ncurses-dev
 				sudo apt-get -y install libncursesw5 libncurses5 libncursesw5-dev libncursesw5-dbg libncurses5-dbg libncurses5-dev libncurses5:i386
-				sudo apt-get -y install libsdl1.2-dev lib32z1 lib32ncurses5 libssl-dev libgtk2.0-0:i386 libxtst6:i386 gtk2-engines-murrine:i386 lib32stdc++6 libxt6:i386 
+				sudo apt-get -y install libsdl1.2-dev lib32z1 lib32ncurses5 libssl-dev libssl1.0-dev libgtk2.0-0:i386 libxtst6:i386 gtk2-engines-murrine:i386 lib32stdc++6 libxt6:i386 
 				sudo apt-get -y install libdbus-glib-1-2:i386 libasound2:i386 libstdc++6:i386 libglib2.0-dev libgcrypt20-dev libpixman-1-dev zlib1g-dev
 				sudo apt-get -y install libgmp3-dev libmpfr-dev libx11-6 libx11-dev libmpc-dev zlibc
 
