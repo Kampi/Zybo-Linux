@@ -19,17 +19,17 @@ In this repository, you will find all the necessary files to compile and run a L
 
 Please check the [wiki](https://gitlab.com/Kampi/Zybo-Linux/wikis/home) or write an e-mail to <DanielKampert@kampis-elektroecke.de> if you need some more detailed information.
 
-You can find additional IP cores in my [IP repository](https://gitlab.com/Kampi/IP).
+You can find additional IP cores in my [IP repository](https://gitlab.com/Kampi/IP-Catalog).
 
 ## Supported Versions
 
 | **Software** | **Version** |
 |-------------------|----------------------------|
-| Ubuntu | 16.04 LTS |
+| Ubuntu | 18.04.4 LTS (WSL) |
 | Linux kernel | xlnx_rebase_v4.14_2018.3 |
 | u-boot | xilinx-v2017.4 |
 | Device tree | xilinx-v2018.3 |
-| Vivado | 2018.2 |
+| Vivado | 2019.2 |
 
 ## Project directory structure
 

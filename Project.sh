@@ -20,12 +20,12 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 # Errors and omissions should be reported to DanielKampert@kampis-elektroecke.de
-# 
+#
 
 #!/bin/bash
 
 ##### Project settings ####
-export VER_VIVADO=2018.2
+export VER_VIVADO=2019.2
 export VER_KERNEL=xlnx_rebase_v4.14_2018.3
 export VER_UBOOT=xilinx-v2017.4
 export VER_DT=xilinx-v2018.3
@@ -40,7 +40,7 @@ export ZYBO_BIF=Zybo.bif
 
 export ROOTFS_QEMU=arm_ramdisk.image.gz
 
-export PATH_VIVADO=/opt/Xilinx
+export PATH_VIVADO=/mnt/d/Xilinx
 export PATH_COMPILER=SDK/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi
 ###########################
 
@@ -69,7 +69,8 @@ export SYSROOT=${DIR_RPOJECT}/SDK/sysroots/cortexa9hf-neon-poky-linux-gnueabi
 export PATH=${PATH}:${DIR_RPOJECT}/u-boot/u-boot-xlnx/tools
 
 # Source vivado settings
-bash -c "source ${PATH_VIVADO}/Vivado/${VER_VIVADO}/settings64.sh"
+bash -c "source ${PATH_VIVADO}/Vivado/${VER_VIVADO}/.settings64-Vivado.sh"
+bash -c "source ${PATH_VIVADO}/Vitis/${VER_VIVADO}/.settings64-Vitis.sh"
 
 if [ $# -eq 1 ] 
 	then
