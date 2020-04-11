@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "env": {
+                "CC": "${config:zybo-linux.cc}",
+                "ARCH": "${config:zybo-linux.arch}",
+                "FPU": "${config:zybo-linux.fpu}",
+                "FLOAT_ABI": "${config:zybo-linux.float_abi}",
+                "CPU": "${config:zybo-linux.cpu}",
+                "SYSROOT": "${config:zybo-linux.sysroot}",
+                "TYPE": "${config:zybo-linux.type}",
+                "CFLAGS": "${config:zybo-linux.cflags}",
+                "LIB_PATH": "${config:zybo-linux.lib_path}",
+                "LIBS": "${config:zybo-linux.libs}",
+                }
+            },
+            
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ]
+}

@@ -1,0 +1,12 @@
+bootenv=uEnv.txt
+
+boot_image=BOOT.bin
+devicetree_image=devicetree.dtb
+kernel_image=uImage.bin
+
+kernel_load_address=0x3000000
+devicetree_load_address=0x2A00000
+
+sdboot=if mmcinfo; then run uenvboot; echo Booting Linux from SD-Card && load mmc 0 ${kernel_load_address} ${kernel_image} && load mmc 0 ${devicetree_load_address} ${devicetree_image} && bootm ${kernel_load_address} - ${devicetree_load_address}; fi
+
+run sdboot;

@@ -1,7 +1,8 @@
-device-tree-xlnx
-u-boot-xlnx
-linux-xlnx
-qemu
+device-tree-xlnx/
+u-boot-xlnx/
+linux-xlnx/
+qemu/
+yocto/
 *.jou
 *.log
 *.runs/

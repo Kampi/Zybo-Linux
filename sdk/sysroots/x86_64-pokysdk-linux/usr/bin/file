@@ -1,0 +1,3 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+exec -a `dirname $realpath`/file `dirname $realpath`/file.real --magic-file /home/kampi/Schreibtisch/Git/Zybo-Linux/sdk/sysroots/x86_64-pokysdk-linux/usr/share/misc/magic.mgc "$@"

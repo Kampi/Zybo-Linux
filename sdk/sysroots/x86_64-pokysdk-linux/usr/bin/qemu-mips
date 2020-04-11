@@ -1,0 +1,4 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+export QEMU_RESERVED_VA=0x0
+exec -a `dirname $realpath`/qemu-mips `dirname $realpath`/qemu-mips.real "$@"
