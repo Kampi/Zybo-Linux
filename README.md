@@ -62,8 +62,7 @@ You can find additional IP cores in my [IP repository](https://gitlab.com/Kampi/
 | Version   	| Description                  			| Date       	|
 |---------------|-----------------------------------------------|---------------|
 | 1.0       	| First release                			| 13.06.2019 	|
-| 2.0       	| Change supported host OS to CentOS and add 	| 11.04.2020 	|
-|		| Vitis support					| 		|
+| 2.0       	| Change supported host OS to CentOS and add Vitis support		| 11.04.2020 	|
 
 ## Maintainer
 
