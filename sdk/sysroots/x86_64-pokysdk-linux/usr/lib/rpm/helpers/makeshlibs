@@ -1,6 +1,0 @@
-case "$1" in
-configure|remove)
-	/sbin/ldconfig
-	;;
-*)	;;
-esac
