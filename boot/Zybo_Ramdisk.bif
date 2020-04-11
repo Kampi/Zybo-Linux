@@ -1,0 +1,8 @@
+image : {
+        [bootloader]/home/kampi/Schreibtisch/Git/Zybo-Linux/vivado/SimpleLinux/software/FSBL/Debug/FSBL.elf
+	/home/kampi/Schreibtisch/Git/Zybo-Linux/vivado/SimpleLinux/hardware/System_wrapper.bit
+	/home/daniel/Schreibtisch/Git/Zybo-Linux/build/u-boot.elf
+	      [load=0x2a00000]devicetree.dtb
+	      [load=0x2000000]arm_ramdisk.image.gz
+	      [load=0x3000000]uImage.bin
+}
